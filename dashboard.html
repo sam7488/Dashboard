@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Design</title>
+  <!-- By Code Info -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">
+      <!-- <img src="dashboard.jpeg" alt="dashboard"> -->
+      Logo
+    </div>
+    <div class="toggle-icon">
+      <i class="fa-solid fa-circle-arrow-left toggle"></i>
+    </div>
+    <ul class="menu">
+      <li class="active">
+        <a href="#">
+          <i class="fa-solid fa-gauge"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>Statistics</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Career</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>FAQ</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-star"></i>
+          <span>Testimonial</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-gear"></i>
+          <span>Setting</span>
+        </a>
+      </li>
+      <li class="logout">
+        <a href="#">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <header class="header-wrapper">
+      <div class="header-title">
+        <span>Primary</span>
+        <h2>Dashboard</h2>
+      </div>
+
+      <div class="user-info">
+        <div class="search-box">
+          <i class="fa-solid fa-search"></i>
+          <input type="text" placeholder="Search...">
+        </div>
+
+        <div>
+          <img src="profile.jpg" alt="">
+        </div>
+      </div>
+    </header>
+
+    <section class="card-container">
+      <h1 class="main-title">
+        Today's data
+      </h1>
+
+      <div class="card-wrapper">
+        <div class="payment-card">
+          <div class="card-header">
+            <div class="card-detail">
+              <span class="card-title">
+                Payment amount
+              </span>
+
+              <span class="amount">
+                $500.00
+              </span>
+            </div>
+
+            <div>
+              <i class="fas fa-dollar-sign icon dark-red"></i>
+            </div>
+          </div>
+
+          <div class="card-number">
+            **** **** **** 7488
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <div class="card-header">
+            <div class="card-detail">
+              <span class="card-title">
+                Payment order
+              </span>
+
+              <span class="amount">
+                $200.00
+              </span>
+            </div>
+
+            <div>
+              <i class="fas fa-list icon dark-purple"></i>
+            </div>
+          </div>
+
+          <div class="card-number">
+            **** **** **** 1437
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <div class="card-header">
+            <div class="card-detail">
+              <span class="card-title">
+                Payment customer
+              </span>
+
+              <span class="amount">
+                $500.00
+              </span>
+            </div>
+
+            <div>
+              <i class="fas fa-users icon dark-green"></i>
+            </div>
+          </div>
+
+          <div class="card-number">
+            **** **** **** 7488
+          </div>
+        </div>
+
+        <div class="payment-card">
+          <div class="card-header">
+            <div class="card-detail">
+              <span class="card-title">
+                Payment proceed
+              </span>
+
+              <span class="amount">
+                $500.00
+              </span>
+            </div>
+
+            <div>
+              <i class="fas fa-check icon dark-blue"></i>
+            </div>
+          </div>
+
+          <div class="card-number">
+            **** **** **** 7488
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tabular-wrapper">
+      <div class="main-title">
+        Finance data
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Transaction Type</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>2023-08-01</td>
+              <td>Expenses</td>
+              <td>Office supplies</td>
+              <td>$200</td>
+              <td>Office Expenses</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+              <td>2023-08-05</td>
+              <td>Expenses</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+              <td>2023-09-05</td>
+              <td>Expenses</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td>not provided</td>
+              <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+              <td>2023-10-10</td>
+              <td>Expenses</td>
+              <td>Office Supplies</td>
+              <td>$30</td>
+              <td>Office Expenses</td>
+              <td>Completed</td>
+              <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+              <td>2023-10-15</td>
+              <td>Expenses</td>
+              <td>Travel Expenses</td>
+              <td>$500</td>
+              <td>Travel</td>
+              <td>Pending</td>
+              <td><button>Edit</button></td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td>Total: $730</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

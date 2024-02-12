@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 1000px;
+}
+
+.sidebar {
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background-color: rgba(132, 88, 222, 0.5);
+}
+
+.closed {
+  width: 110px;
+}
+
+.toggle {
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media screen  and (max-width: 768px) {
+  .sidebar {
+    width: 110px;
+  }
+
+  .logo {
+    background-image: url();
+  }
+  
+}
+.logo {
+  background-color: #b66e6e;
+  border-radius: 10px;
+  font-size: 24px;
+  margin: 10px 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  list-style: none;
+  /* subtracting 100px as .logo take 100px (80px + 10px*2) */
+  height: calc(100% - 100px);
+
+}
+
+.menu li {
+  margin: 8px 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.5s linear;
+
+}
+
+.menu li:hover,
+.active
+ {
+  background-color: rgba(132, 88, 222, 1);
+  cursor: pointer;
+}
+
+.menu a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a i {
+  font-size: 1.3rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.main-content {
+  position: relative;
+  background-color: #ebe9e9;
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+
+.header-title {
+  color: rgba(113, 99, 186, 1);
+}
+
+.header-wrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  width: 300px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 15px;
+  color: rgba(113, 99, 186, 1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+}
+
+.search-box i {
+  font-size: 1.2rem;
+  transition: all 0.4s ease-out;
+}
+
+.search-box i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.search-box input {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.card-container {
+  background-color: #FFF;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.main-title {
+  color: rgba(113, 99, 186, 1);
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.payment-card {
+  background: rgba(229, 223, 223, 1);
+  padding: 1.2rem;
+  border-radius: 10px;
+  width: 300px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+
+.payment-card:nth-child(1) {
+  background: rgb(249, 216, 216);
+}
+
+.payment-card:nth-child(1):hover {
+  box-shadow: 5px 5px 5px rgba(230, 71, 71, 0.3);
+}
+
+.payment-card:nth-child(2) {
+  background: rgb(248, 226, 254);
+}
+
+.payment-card:nth-child(2):hover {
+  box-shadow: 5px 5px 5px rgba(209, 90, 242, 0.3);
+}
+
+.payment-card:nth-child(3) {
+  background: rgb(222, 252, 222)
+}
+
+.payment-card:nth-child(3):hover {
+  box-shadow: 5px 5px 5px rgba(90, 189, 90, 0.3)
+}
+
+.payment-card:nth-child(4) {
+  background: rgb(236, 236, 254);
+}
+
+.payment-card:nth-child(4):hover {
+  box-shadow: 5px 5px 5px rgba(116, 116, 232, 0.3);
+}
+
+.payment-card:hover {
+  cursor: pointer;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+} 
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.amount-value {
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.icon {
+  padding: 1rem;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.card-number {
+  font-size: 18px;
+  color: #777777;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.dark-red {
+  background: red;
+}
+
+.dark-purple {
+  background: purple;
+}
+
+.dark-green {
+  background: green;
+}
+
+.dark-blue {
+  background: blue;
+}
+
+.tabular-wrapper {
+  background-color: #FFF;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.table-container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgba(113, 99, 186, 1);
+  color: #fff;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+}
+
+tbody {
+  background-color: #f2f2f2;
+}
+
+td {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+.table-container button {
+  color: green;
+  background: none;
+  cursor: pointer;
+}
+
+tfoot{
+  background-color: rgba(113, 99, 186, 1);
+  font-weight: bold;
+  color: #fff;
+}
+
+tfoot td {
+  padding: 15px;
+}
+
+
